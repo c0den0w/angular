@@ -1,0 +1,40 @@
+.background{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom, #5638ff 80%,#0a0041);
+    position: relative;
+}
+.accent{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    h1{
+        font-size: 180px;
+        font-weight: 600;
+        color: #f8f9fa;
+        z-index: 10;
+    }
+}
+.login-container{
+    position: absolute;
+    z-index: 99;
+    top: 50%;
+    left: 55%;
+    transform: translateY(-50%);
+    background-color: #f8f9fa;
+    padding: 3rem;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 0 rgba(0,0,0,0.3);
+}
+.login-form, .login-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    min-width: 25rem;
+}
+.input-container > label, .button-container > a{
+        margin-left: 0.25rem;
+        font-size: 0.9rem;
+}
+
