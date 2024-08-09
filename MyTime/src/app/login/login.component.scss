@@ -4,16 +4,58 @@
     background: linear-gradient(to bottom, #5638ff 80%,#0a0041);
     position: relative;
 }
-.accent{
+.accent-container{
     position: absolute;
     top: 50%;
     left: 5%;
     transform: translateY(-50%);
-    h1{
-        font-size: 180px;
-        font-weight: 600;
-        color: #f8f9fa;
-        z-index: 10;
+    & > .accent{
+        position: relative;
+        h1{
+            font-size: 180px;
+            font-weight: 600;
+            color: #f8f9fa;
+            z-index: 10;
+        }
+    }
+}
+.dot-container{
+
+}
+.dot{
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: #f8f9fa;
+}
+.dot-1{
+    left: 40%;
+    animation: wave 1.25s infinite linear;
+}
+.dot-2{
+    left:50%;
+    animation: wave 1.25s infinite linear 0.25s;
+}
+.dot-3{
+    left: 60%;
+    animation: wave 1.25s infinite linear 0.5s;
+
+}
+
+@keyframes wave {
+    0%{
+        transform: translateY(0rem);
+    }
+
+    20%{
+        transform: translateY(-2rem);
+    }
+    40%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(0);
     }
 }
 .login-container{
