@@ -1,6 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 @import "bulma/css/bulma.css";
-
+:root{
+    $--bulma-primary: #3456;
+}
 *{
     margin: 0;
     padding: 0;
@@ -8,6 +10,7 @@
     font-family: "DM Sans", sans-serif;
     font-optical-sizing: auto;
     $button-active-color: #343456;
+    
 }
 input::placeholder{
     font-family: "DM Sans", sans-serif;

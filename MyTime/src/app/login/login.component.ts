@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-
+import { Component, OnInit } from '@angular/core';
+import { ServicenowService } from '../services/servicenow.service';
 @Component({
   selector: 'app-login',
   standalone: true,
@@ -8,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrl: './login.component.scss'
 })
 export class LoginComponent {
-
+  
+  constructor(private servicenow: ServicenowService){ 
+    this.servicenow.login();
+  }
+  
 }
