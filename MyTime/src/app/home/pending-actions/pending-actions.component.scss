@@ -1,0 +1,30 @@
+.pending-actions-container{
+    margin: 2rem 5rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    // border: 2px solid saturate($color: #5638ff, $amount: 23);
+    border: 0.15rem solid #5638ff;
+
+    // box-shadow: 6px 6px  3px #5638ff;
+}
+.cards-container{
+    display: flex;
+    gap: 2rem;
+
+}
+.card:last-of-type{
+    margin-bottom: 1.5rem;
+}
+.card:hover{
+    transform: translateY(-1px);
+    filter: drop-shadow(5px 10px 10px rgba(86, 56, 255,0.25));
+    transition: all 0.25s linear;
+}
+.block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & > h3{
+        margin: 0;
+    }
+}
