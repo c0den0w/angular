@@ -1,0 +1,15 @@
+app-workarea{
+    background-color: #f8f9fa;
+    height: 100vh;
+}
+app-widgets{
+    background-color: #f1f3f5;
+    height: 100vh;
+
+
+}
+.container{
+    display: grid;
+    min-width: 100vw;
+    grid: auto-flow dense / 70% 30%;
+}
