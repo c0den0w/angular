@@ -1,0 +1,23 @@
+.search-component{
+    position: relative;
+}
+.search{
+box-sizing: border-box;
+display: flex;
+justify-content: center;
+position: absolute;
+padding: 1rem;
+width: 100%;
+// min-width: 432px;
+height: 70px;
+left: 0px;
+top: 0px;
+// font-size: 1.15rem;
+}
+.search-input{
+    width: 90%;
+box-sizing: border-box;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 20px;
+}
