@@ -1,3 +1,5 @@
+@import "styles.scss";
+
 .layout-options-container{
     padding: 1.25rem;
     min-height: calc(50px) ;
@@ -17,7 +19,7 @@
     display: flex;
     background-color: rgba(#868e96,0.75);
     & > .dropdown-title{
-        color: #f1f3f5;
+        color: var(--light-one);
         font-size: 0.85rem;
     }
 }
