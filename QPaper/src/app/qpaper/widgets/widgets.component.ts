@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { SearchWidgetsComponent } from './search-widgets/search-widgets.component';
 import { GroupComponent } from './group/group.component';
+import { SearchComponent } from './search/search.component';
 @Component({
   selector: 'app-widgets',
   standalone: true,
-  imports: [SearchWidgetsComponent, GroupComponent],
+  imports: [ GroupComponent, SearchComponent],
   templateUrl: './widgets.component.html',
   styleUrl: './widgets.component.scss'
 })
