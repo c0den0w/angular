@@ -1,7 +1,22 @@
 <div class="layout-options-container">
     <div class="layout-options-flex">
-        <div class="dropdown-container">
-            <span class="dropdown-title">Page size</span>
+        <div class="dropdown">
+            <div class="dropdown-container" (click)="toggleDropdown()">
+                <span class="dropdown-title">{{dropdownTitle}}</span>
+                <span class="dropdown-arrow">
+                    <svg width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0L5 5L10 0H0Z" fill="#f8f9fa"/>
+                        </svg>
+                </span>
+            </div>
+            <div class="dropdown-options" *ngIf="showDropdown">
+   
+                <ul>
+                    <li (click)="selectpageSize($event)">A4</li>
+                    <li (click)="selectpageSize($event)">Letter</li>
+                    <li (click)="selectpageSize($event)">A3</li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
