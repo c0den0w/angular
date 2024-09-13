@@ -1,5 +1,23 @@
-*{
-    background-color: #444444;
-    // height: 10%;
-    min-height: 70px;
+.layout-options-container{
+    padding: 1.25rem;
+    min-height: calc(50px) ;
+}
+.layout-options-flex{
+    background-color: #495057;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 50px;
+    border-radius: 20px;
+}
+.dropdown-container{
+    padding: 0.3rem 0.6rem;
+    border-radius: 20px;
+    display: flex;
+    background-color: rgba(#868e96,0.75);
+    & > .dropdown-title{
+        color: #f1f3f5;
+        font-size: 0.85rem;
+    }
 }
