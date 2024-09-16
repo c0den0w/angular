@@ -1,16 +1,15 @@
+@import "styles.scss";
+
 app-workarea, .layout-options-workarea{
     background-color: #f8f9fa;
     height: 100vh;
 }
+app-widgets{
+    background-color: var(--light-one);
 
-// app-widgets{
-//     background-color: #f1f3f5;
-// }
+}
 .container{
     display: grid;
     min-width: 100vw;
     grid: auto-flow dense / 80% 20%;
 }
-/* Rectangle 13 */
-
-
