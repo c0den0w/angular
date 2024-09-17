@@ -1,12 +1,16 @@
 @import "styles.scss";
 
-app-workarea, .layout-options-workarea{
+app-layout-options{
     background-color: #f8f9fa;
     height: 100vh;
 }
+app-workarea{
+    height: calc(100vh - 70px);
+    background-color: #e23;
+
+}
 app-widgets{
     background-color: var(--light-one);
-
 }
 .container{
     display: grid;

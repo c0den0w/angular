@@ -1,4 +1,21 @@
 *{
-    background-color: #A1A1A1;
-    height: calc(100vh - 70px);
+    background-color: #f8f9fa;
+    height: calc(100vh - 1.25em - 1.25rem - 50px);
+}
+.workarea{
+    position: relative;
+    padding: 2rem;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+.paper{
+    position: absolute;
+    top: calc(2rem);
+    bottom: calc(2rem);
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+    box-shadow: 2px 4px 8px 2px rgba(#000,0.25);
+    width: calc(210px * 5);
+    height: calc(297px * 5) 
 }
