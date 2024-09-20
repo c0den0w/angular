@@ -2,9 +2,28 @@
 @import "https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css";
 
 *{
-    font-family: "Manrope", sans-serif;
+  font-family: "Manrope", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  --light-one: #f8f9fa;
-  --dark-two: #495057;
+  --color-light-one: #f8f9fa;
+  --color-light-two: #f1f3f5;
+  --color-light-three: #e9ecef;
+  --color-dark-one: #343a40;
+  --color-dark-two: #495057;
+  --color-dark-three: #868e96;
+  --color-grey-dark: #adb5bd;
+  --color-grey-medium: #ced4da;
+  --color-grey-light: #dee2e6;
+
+  --color-primary:#be4bdb;
+  --color-primary-light:#cc5de8;
+  --color-primary-lighter:#da77f2;
+  --color-primary-dark: #ae3ec9;
+  --color-primary-darker: #9c36b5;
+  --color-secondary: #fcc419;
+
+  --font-small: 0.85rem;
+  --font-regular: 1rem;
+  --font-medium: 1.25rem;
+  --font-large: 1.5rem;
 }

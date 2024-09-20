@@ -3,11 +3,11 @@
 .layout-options-container{
     padding: 1.25rem; 
     min-height: calc(50px) ;
-    background-color: #f8f9fa;
+    background-color: var(--color-light-one);
 }
 .layout-options-flex{
     box-shadow: -1px 4px 6px 2px rgba(#495057,0.25);
-    background-color: #495057;
+    background-color: var(--color-dark-two);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,7 +27,7 @@
     gap: 0.5rem;
     background-color: rgba(#868e96,0.7);
     & > .dropdown-title{
-        color: var(--light-one);
+        color: var(--color-light-one);
         font-size: 0.85rem;
     }
     & > .dropdown-arrow{
@@ -49,7 +49,7 @@
     top: 3rem;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #e9ecef;
+    background-color: var(--color-light-three);
     border-radius: 20px;
     & > ul{
         & > li{
@@ -58,23 +58,23 @@
 
         }
         & > li:not(:last-child){
-            border-bottom: 1px solid #ced4da;
+            border-bottom: 1px solid var(--color-grey-medium);
         }
         & > li:last-child:hover{
             cursor: pointer;
-                background-color: #ced4da;
+                background-color: var(--color-grey-medium);
                 border-bottom-left-radius: 20px;
                 border-bottom-right-radius: 20px;
         }
         & > li:first-child:hover{
             cursor: pointer;
-                background-color: #ced4da;
+                background-color: var(--color-grey-medium);
                 border-top-left-radius: 20px;
                 border-top-right-radius: 20px;
         }
         & > li:nth-child(2):hover{
             cursor: pointer;
-            background-color: #ced4da;
+            background-color: var(--color-grey-medium);
         }
     }
 }
