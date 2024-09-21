@@ -1,3 +1,15 @@
 .components-widget{
     border: 1rem inset transparent;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+}
+.widget-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.widget-title{
+    font-size: 0.85rem;
 }
