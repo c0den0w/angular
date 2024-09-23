@@ -24,4 +24,19 @@ export class WorkareaComponent {
       this.pageScaleFactor = this.pageScaleFactor - this.pageScaleFactor * 0.01;
     }
   }
+  dragoverHandler(ev:any) {
+    ev.preventDefault();
+    console.log(ev);
+    ev.dataTransfer.dropEffect = "move";
+  }
+  dropHandler(e: any) {
+    e.preventDefault();
+    const data = e.dataTransfer.getData("text/html");
+    console.log(data);
+    let element = document.createElement("div");
+    element.classList.add("container-component");
+    document.getElementById("paper")?.appendChild(element);
+
+    // document.getElementById("paper")!.innerHTML += data;
+  }
 }

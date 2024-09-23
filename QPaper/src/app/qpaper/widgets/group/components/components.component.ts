@@ -8,5 +8,15 @@ import { Component } from '@angular/core';
   styleUrl: './components.component.scss'
 })
 export class ComponentsComponent {
+  containerMarkup:string = `<div class="container-component"></div>`;
+
+
+  draghandler(e:any){
+    let containerMarkup = document.createElement("div");
+    containerMarkup.classList.add("container-component");
+    containerMarkup.contentEditable = "true";
+    e.dataTransfer.setData("text/html", containerMarkup);
+    e.dataTransfer.dropEffect = "copy";
+  }
 
 }
