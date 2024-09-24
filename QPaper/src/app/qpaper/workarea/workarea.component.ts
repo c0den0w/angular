@@ -1,13 +1,19 @@
-import { Component } from '@angular/core';
+import { Component, ViewContainerRef, ViewChild, NgModuleRef, OnInit } from '@angular/core';
+import { SearchComponent } from '../widgets/search/search.component';
 
 @Component({
   selector: 'app-workarea',
   standalone: true,
-  imports: [],
+  imports: [SearchComponent],
   templateUrl: './workarea.component.html',
   styleUrl: './workarea.component.scss'
 })
-export class WorkareaComponent {
+export class WorkareaComponent implements OnInit {
+  ngOnInit(): void {
+    
+  }
+  @ViewChild("vcr",{static: false, read: ViewContainerRef}) vcr!: ViewContainerRef;
+  constructor(){}
   pageScaleFactor: number = 5;
   zoomin(e: any){
     console.log(e.wheelDelta);
@@ -32,8 +38,9 @@ export class WorkareaComponent {
   dropHandler(e: any) {
     e.preventDefault();
     const data = e.dataTransfer.getData("text/html");
-    console.log(data);
+  const newComp = this!.vcr.createComponent(SearchComponent,{index: 0});
     let element = document.createElement("div");
+    element.id = ""
     element.classList.add("container-component");
     document.getElementById("paper")?.appendChild(element);
 

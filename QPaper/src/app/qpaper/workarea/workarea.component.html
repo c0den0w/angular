@@ -1,7 +1,7 @@
 <div class="workarea-container">
     <div class="workarea">
         <div class="paper" draggable="true" (mousewheel)="zoomin($event)" (wheel)="zoomin($event)" id="paper" (drop)="dropHandler($event)" (dragover)="dragoverHandler($event)">
-            
+            <ng-container #vcr></ng-container>
         </div>
     </div>
 </div>
